@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+
+.cta-btn {
+  color: white;
+  font-weight: 500;
+  font-size: 2.4rem;
+  padding: 1rem 5rem;
+  background-color: transparent;
+  border: 2px solid white;
+  transition: all .15s;
+  margin-right: $margin-small;
+
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+  }
+
+  &--filled {
+    background-color: white;
+    color: black;
+
+    &:hover {
+      cursor: pointer;
+      background-color: transparent;
+      color: white;
+    }
+  }
+}

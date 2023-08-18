@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.header {
+  font-weight: 300;
+  height: 5rem;
+  font-size: 2.1rem;
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__section-2 {
+    display: flex;
+    gap: $margin-small;
+  }
+
+  &__link {
+    color: inherit;
+  }
+}

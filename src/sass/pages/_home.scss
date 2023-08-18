@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.main {
+  margin-top: 15rem;
+  font-size: 3.2rem;
+
+  &__greeting {
+    font-family: "Lora", sans-serif;
+  }
+
+  &__main-text {
+    margin-top: $margin-small;
+    font-size: 12.8rem;
+    font-weight: bold;
+    width: 50vw;
+    line-height: 12.5rem;
+    margin-bottom: $margin-medium;
+  }
+}
