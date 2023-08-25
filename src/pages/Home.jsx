@@ -1,28 +1,20 @@
-import Header from "../components/Header";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
-      <div className="bg">
-        <img
-          className="bg__img"
-          src="/images/bg-laptop-cropped.jpg"
-          alt="bg image"
-        />
-      </div>
-
-      <Header />
-
-      <main className="main">
-        <div className="main__left-text">
-          <p className="main__greeting">I am César, a</p>
-          <p className="main__main-text">WEB DEVELOPER</p>
+      <main className="home">
+        <div className="home__left-text">
+          <p className="home__greeting">I am César, a</p>
+          <p className="home__main-text">WEB DEVELOPER</p>
         </div>
-        <div className="main__cta">
+        <div className="home__cta">
           <a className="cta-btn cta-btn--filled margin-right--small">
             CONTACT ME
           </a>
-          <a className="cta-btn">MY WORK</a>
+          <Link className="cta-btn" to="/my-work">
+            MY WORK
+          </Link>
         </div>
       </main>
     </>

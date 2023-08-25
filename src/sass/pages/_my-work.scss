@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.my-work {
+  &__section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &__info {
+    border: 1px solid lightblue;
+  }
+
+  &__title {
+    font-size: 12.8rem;
+    color: #6262FF;
+  }
+
+  &__images {
+    border: 1px solid lightcoral;
+  }
+}
