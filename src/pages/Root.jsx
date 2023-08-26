@@ -1,5 +1,7 @@
 import Header from "../components/Header";
 import { Outlet } from "react-router-dom";
+import bg from "../assets/bg-laptop-cropped.jpg"
+
 
 const Root = () => {
   return (
@@ -8,7 +10,7 @@ const Root = () => {
       <div className="bg">
         <img
           className="bg__img"
-          src="/images/bg-laptop-cropped.jpg"
+          src={bg}
           alt="bg image"
         />
       </div>
