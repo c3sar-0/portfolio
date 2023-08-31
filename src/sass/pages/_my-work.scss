@@ -1,6 +1,8 @@
 @use "../abstracts" as *;
 
 .my-work {
+  margin-top: $margin-big;
+
   &__section {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -8,18 +10,36 @@
   }
 
   &__info {
-    // border: 1px solid lightblue;
   }
 
   &__title {
     font-size: 12.8rem;
     color: #6262FF;
     line-height: 12.5rem;
+    margin-bottom: $margin-small;
   }
 
   &__desc {
     font-size: 2.4rem;
     line-height: 3.8rem;
+    font-weight: 300;
+  }
+
+  &__link-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: $margin-medium;
+    gap: 3rem;
+  }
+
+  &__link-icon {
+    width: 4rem;
+    cursor: pointer;
+
+    &:last-child {
+      width: 5rem;
+    }
   }
 
   &__images {
@@ -27,11 +47,15 @@
     align-self: center;
     position: relative;
     aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
   }
 
   &__desktop-img {
-    width: 100%;
     position: absolute;
+    max-width: 100%;
+    max-height: 50vh;
+    right: 12rem;
   }
 
   &__mobile-img {

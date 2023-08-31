@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import transition from "../utils/transition";
 
 const Home = () => {
   return (
@@ -21,4 +22,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default transition(Home);
