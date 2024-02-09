@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.about-me {
+  margin-top: $margin-big;
+
+  &__title {
+    font-size: 12.8rem;
+    color: #6262ff;
+    line-height: 12.5rem;
+    margin-bottom: $margin-small;
+  }
+
+  &__desc {
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    font-weight: 300;
+    max-width: 33vw;
+  }
+}

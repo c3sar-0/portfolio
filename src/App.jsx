@@ -1,10 +1,11 @@
 import { useState } from "react";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import Root from "./pages/Root.jsx";
 import Home from "./pages/Home.jsx";
 import MyWork from "./pages/MyWork.jsx";
-import Root from "./pages/Root.jsx";
-import { AnimatePresence } from "framer-motion";
+import AboutMe from "./pages/AboutMe.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "my-work",
         element: <MyWork />,
+      },
+      {
+        path: "about-me",
+        element: <AboutMe />,
       },
     ],
   },
