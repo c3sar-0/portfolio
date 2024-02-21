@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ openModal }) => {
   return (
     <>
       <header className="header">
@@ -11,10 +11,13 @@ const Header = () => {
             </Link>
           </div>
           <div className="header__section-2">
+            <Link to="/my-work" className="header__link">
+              My Work
+            </Link>
             <Link to="/about-me" className="header__link">
               About Me
             </Link>
-            <Link to="#" className="header__link">
+            <Link to="#" className="header__link" onClick={openModal}>
               Contact
             </Link>
           </div>

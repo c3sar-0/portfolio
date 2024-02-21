@@ -2,7 +2,11 @@
 
 .home {
   margin-top: 15rem;
-  font-size: 3.2rem;
+
+  &__header {
+    font-size: 3.2rem;
+    margin-bottom: $margin-section;
+  }
 
   &__greeting {
     font-family: "Lora", sans-serif;
@@ -15,5 +19,22 @@
     width: 50vw;
     line-height: 12.5rem;
     margin-bottom: $margin-medium;
+    color: $blue;
+
+    @include respond(phone) {
+      font-size: 10rem;
+    }
+  }
+
+  &__about {
+    font-size: 2rem;
+  }
+
+  &__about-title {
+    font-weight: bold;
+    color: $blue;
+  }
+
+  &__about-text {
   }
 }

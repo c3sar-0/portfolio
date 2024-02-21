@@ -1,11 +1,22 @@
+@use "./abstracts/" as *;
+
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 html {
   font-size: 10px;
+
+  @include respond(tab-port) {
+    font-size: 8px;
+  }
+
+  @include respond(phone) {
+    font-size: 6px;
+  }
 }
 
 body {
@@ -13,13 +24,13 @@ body {
   padding: 4rem 6.6rem;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+  font-size: 2.4rem;
   position: relative;
   height: 100vh;
 }
 
 .bg {
-  position: fixed; 
+  position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
@@ -35,5 +46,6 @@ body {
     max-width: 50rem;
     object-fit: scale-down;
     margin-right: 10%;
+    opacity: 0.8;
   }
 }

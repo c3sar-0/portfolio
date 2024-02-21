@@ -12,11 +12,11 @@ const MyWork = () => {
           <div className="my-work__info">
             <h1 className="my-work__title">BYTE BUSTERS</h1>
             <p className="my-work__desc">
-              Bytebusters is a website where users can register, join, share and
-              interact with posts. Here everyone can let their creativity free
-              and enjoy while sharing experiences with the community. Create,
-              like and comment posts, interact with other users, make friends,
-              and much more!
+              Bytebusters is a website where users can register, create, share
+              and interact with posts. Here everyone can let their creativity
+              free and enjoy while sharing experiences with the community.
+              Create, like and comment posts, interact with other users, make
+              friends, and much more!
             </p>
             <div className="my-work__link-icons">
               <img src={ghLogo} alt="gh logo" className="my-work__link-icon" />

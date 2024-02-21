@@ -8,12 +8,36 @@
     color: #6262ff;
     line-height: 12.5rem;
     margin-bottom: $margin-small;
+
+    @include respond(phone) {
+      font-size: 10rem;
+    }
   }
 
-  &__desc {
-    font-size: 2.4rem;
+  &__subtitle {
+    color: $blue;
+  }
+
+  &__text {
     line-height: 3.8rem;
     font-weight: 300;
-    max-width: 33vw;
+    max-width: 60vw;
+    margin-bottom: $margin-small;
+
+    @include respond(phone) {
+      max-width: 100%;
+    }
+  }
+
+  &__skills {
+  }
+
+  &__languages {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: $margin-small;
+  }
+
+  &__language {
   }
 }

@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Root from "./pages/Root.jsx";
@@ -29,8 +27,6 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <AnimatePresence mode="wait">
       <RouterProvider router={router} />

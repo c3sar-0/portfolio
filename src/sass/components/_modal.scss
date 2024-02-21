@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.modal {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 4rem;
+  border: 1px solid white;
+
+  & h1 {
+    margin: 0;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__icon {
+    width: 6rem;
+  }
+}

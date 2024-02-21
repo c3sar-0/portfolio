@@ -2,19 +2,28 @@
 
 .my-work {
   margin-top: $margin-big;
+  display: flex;
 
   &__section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 3rem;
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__info {
+    @include respond(phone) {
+      margin-bottom: $margin-big;
+    }
   }
 
   &__title {
     font-size: 12.8rem;
-    color: #6262FF;
+    color: $blue;
     line-height: 12.5rem;
     margin-bottom: $margin-small;
   }
@@ -49,13 +58,23 @@
     aspect-ratio: 16/9;
     display: flex;
     align-items: center;
+
+    @include respond(phone) {
+      display: flex;
+    }
   }
 
   &__desktop-img {
     position: absolute;
-    max-width: 100%;
     max-height: 50vh;
     right: 12rem;
+
+    @include respond(phone) {
+      right: 0;
+      top: 0;
+      max-width: 90vw;
+      position: relative;
+    }
   }
 
   &__mobile-img {
@@ -64,5 +83,9 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+
+    @include respond(phone) {
+      max-height: 30vh;
+    }
   }
 }
