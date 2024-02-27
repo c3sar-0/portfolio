@@ -8,19 +8,19 @@ import { AnimatePresence } from "framer-motion";
 
 const Root = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const close = () => setModalOpen(false);
-  const open = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+  const openModal = () => setModalOpen(true);
 
   return (
     <>
       <AnimatePresence>
-        {modalOpen && <Modal handleClose={close} />}
+        {modalOpen && <Modal handleClose={closeModal} />}
       </AnimatePresence>
-      <Header openModal={open} />
+      <Header openModal={openModal} />
       <div className="bg">
         <img className="bg__img" src={bg} alt="bg image" />
       </div>
-      <Outlet />
+      <Outlet context={[openModal]} />
     </>
   );
 };
