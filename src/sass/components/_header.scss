@@ -17,5 +17,7 @@
 
   &__link {
     color: inherit;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
 }

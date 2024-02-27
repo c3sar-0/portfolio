@@ -7,8 +7,12 @@
   padding: 1rem 5rem;
   background-color: transparent;
   border: 2px solid white;
-  transition: all .15s;
+  transition: all 0.15s;
   margin-right: $margin-small;
+
+  @include respond(phone-narrow) {
+    padding: 1rem 3rem;
+  }
 
   &:hover {
     cursor: pointer;

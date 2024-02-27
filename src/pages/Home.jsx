@@ -8,7 +8,10 @@ const Home = () => {
         <header className="home__header">
           <div className="home__left-text">
             <p className="home__greeting">I am César, a</p>
-            <p className="home__main-text">WEB DEVELOPER</p>
+            <p className="home__main-text">
+              <p>WEB</p>
+              <p>DEVELOPER</p>
+            </p>
           </div>
           <div className="home__cta">
             <a className="cta-btn cta-btn--filled">CONTACT ME</a>

@@ -10,14 +10,8 @@
 
 // 1em = 10px
 @mixin respond($breakpoint) {
-  @if $breakpoint == desktop-large {
-    @media (min-width: 1920px) {
-      @content;
-    }
-  }
-
   @if $breakpoint == desktop {
-    @media (min-width: 1200px) {
+    @media (max-width: 1360px) {
       @content;
     }
   }
@@ -36,6 +30,12 @@
 
   @if $breakpoint == phone {
     @media (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone-narrow {
+    @media (max-width: 400px) {
       @content;
     }
   }

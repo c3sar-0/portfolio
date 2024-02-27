@@ -9,7 +9,7 @@
     grid-template-columns: 1fr 2fr;
     column-gap: 3rem;
 
-    @include respond(phone) {
+    @include respond(tab-land) {
       display: flex;
       flex-direction: column;
     }
@@ -19,6 +19,10 @@
     @include respond(phone) {
       margin-bottom: $margin-big;
     }
+
+    @include respond(tab-land) {
+      margin-bottom: $margin-medium;
+    }
   }
 
   &__title {
@@ -26,6 +30,14 @@
     color: $blue;
     line-height: 12.5rem;
     margin-bottom: $margin-small;
+
+    @include respond(phone) {
+      font-size: 12rem;
+    }
+
+    @include respond(phone-narrow) {
+      font-size: 11.5rem;
+    }
   }
 
   &__desc {
@@ -55,34 +67,46 @@
     // border: 1px solid lightcoral;
     align-self: center;
     position: relative;
-    aspect-ratio: 16/9;
+    // aspect-ratio: 16/9;
+    height: 100%;
     display: flex;
     align-items: center;
-
-    @include respond(phone) {
-      display: flex;
-    }
   }
 
   &__desktop-img {
-    position: absolute;
-    max-height: 50vh;
-    right: 12rem;
+    // position: absolute;
+    // max-height: 50vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    // right: 12rem;
+    aspect-ratio: 16/9;
+    height: 85%;
+
+    & img {
+      max-width: 100%;
+    }
 
     @include respond(phone) {
       right: 0;
       top: 0;
-      max-width: 90vw;
       position: relative;
     }
   }
 
   &__mobile-img {
     position: absolute;
-    max-height: 75vh;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    bottom: 0;
+    // top: 50%;
+    // transform: translateY(-50%);
+
+    & img {
+      // max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
 
     @include respond(phone) {
       max-height: 30vh;

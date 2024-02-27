@@ -10,7 +10,7 @@
 html {
   font-size: 10px;
 
-  @include respond(tab-port) {
+  @include respond(desktop) {
     font-size: 8px;
   }
 
@@ -21,12 +21,20 @@ html {
 
 body {
   background-color: #010101;
-  padding: 4rem 6.6rem;
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 2.4rem;
   position: relative;
   height: 100vh;
+  padding: 4rem 6.6rem;
+
+  @include respond(tab-land) {
+    padding: 4rem 5.6rem;
+  }
+
+  @include respond(phone) {
+    padding: 4rem 4.6rem;
+  }
 }
 
 .bg {

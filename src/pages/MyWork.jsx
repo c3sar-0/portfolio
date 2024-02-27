@@ -10,7 +10,10 @@ const MyWork = () => {
       <div className="my-work">
         <section className="my-work__section my-work__bytebusters">
           <div className="my-work__info">
-            <h1 className="my-work__title">BYTE BUSTERS</h1>
+            <h1 className="my-work__title">
+              <p>BYTE</p>
+              <p>BUSTERS</p>
+            </h1>
             <p className="my-work__desc">
               Bytebusters is a website where users can register, create, share
               and interact with posts. Here everyone can let their creativity
@@ -28,16 +31,12 @@ const MyWork = () => {
             </div>
           </div>
           <div className="my-work__images">
-            <img
-              className="my-work__desktop-img"
-              alt="demo desktop image"
-              src={bb1}
-            />
-            <img
-              className="my-work__mobile-img"
-              alt="demo mobile image"
-              src={bb2}
-            />
+            <div className="my-work__desktop-img">
+              <img alt="demo desktop image" src={bb1} />
+            </div>
+            <div className="my-work__mobile-img">
+              <img alt="demo mobile image" src={bb2} />
+            </div>
           </div>
         </section>
       </div>
