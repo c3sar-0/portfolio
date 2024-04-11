@@ -24,7 +24,6 @@ const Modal = ({ handleClose }) => {
           </a>
         </div>
         <p>aa4549807@gmail.com</p>
-        <p>+598 92 610 749</p>
       </motion.div>
     </Backdrop>
   );
